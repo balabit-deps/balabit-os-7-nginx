@@ -1,3 +1,9 @@
+nginx (1.14.0-0ubuntu1bb1) bionic; urgency=medium
+
+  * Balabit patched version
+
+ -- Balabit Platform Team <devnull@dev.null>  Mon, 06 Aug 2018 18:56:46 +0200
+
 nginx (1.14.0-0ubuntu1) bionic; urgency=medium
 
   * New upstream stable release (1.14.0)
