@@ -36,7 +36,12 @@ if [ -x /etc/init.d/nginx ]; then
       kill -s QUIT $NGX_OLD_PID
     fi
   else
-    invoke-rc.d nginx start || exit $?
+    if [ -z "$(ss -nlt 'sport = 80' | grep -v ^State)" ]; then
+      invoke-rc.d nginx start || exit $?
+    else
+      echo "Not attempting to start NGINX, port 80 is already in use."
+      exit 0
+    fi
   fi
 fi
 

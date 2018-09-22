@@ -1,3 +1,16 @@
+nginx (1.14.0-0ubuntu1.1) bionic; urgency=medium
+
+  * Stable Release Update. Do not attempt to start nginx if other daemon
+    is binding to port 80, to prevent install failure (LP: #1782226):
+    - d/nginx{core,light,full,extras}.postinst: Add checks for whether
+      port 80 is in use or not to determine whether or not to attempt 
+      starting of the NGINX service during install/upgrade.
+    - d/control: Add dependencies to nginx-{core,light,full,extras} on
+      `iproute2` as the postinst scripts now use `ss` to determine if
+      Port 80 is open or not.
+
+ -- Andres Rodriguez <andreserl@ubuntu.com>  Mon, 20 Aug 2018 18:41:42 -0400
+
 nginx (1.14.0-0ubuntu1bb1) bionic; urgency=medium
 
   * Balabit patched version
