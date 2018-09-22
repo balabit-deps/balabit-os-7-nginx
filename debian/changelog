@@ -1,3 +1,9 @@
+nginx (1.14.0-0ubuntu1.1bb1) bionic; urgency=medium
+
+  * Balabit patched version
+
+ -- Balabit Platform Team <devnull@dev.null>  Sat, 22 Sep 2018 04:22:13 +0200
+
 nginx (1.14.0-0ubuntu1.1) bionic; urgency=medium
 
   * Stable Release Update. Do not attempt to start nginx if other daemon
