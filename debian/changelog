@@ -1,3 +1,20 @@
+nginx (1.14.0-0ubuntu1.2) bionic-security; urgency=medium
+
+  * SECURITY UPDATE: excessive memory consumption in HTTP/2 implementation
+    - debian/patches/CVE-2018-16843.patch: add flood detection in
+      src/http/v2/ngx_http_v2.c, src/http/v2/ngx_http_v2.h.
+    - CVE-2018-16843
+  * SECURITY UPDATE: excessive CPU usage in HTTP/2 implementation
+    - debian/patches/CVE-2018-16844.patch: limit the number of idle state
+      switches in src/http/v2/ngx_http_v2.c, src/http/v2/ngx_http_v2.h.
+    - CVE-2018-16844
+  * SECURITY UPDATE: infinite loop in ngx_http_mp4_module
+    - debian/patches/CVE-2018-16845.patch: fixed reading 64-bit atoms in
+      src/http/modules/ngx_http_mp4_module.c.
+    - CVE-2018-16845
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 06 Nov 2018 13:54:15 -0500
+
 nginx (1.14.0-0ubuntu1.1) bionic; urgency=medium
 
   * Stable Release Update. Do not attempt to start nginx if other daemon
