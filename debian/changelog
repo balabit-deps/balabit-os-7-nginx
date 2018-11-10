@@ -1,3 +1,9 @@
+nginx (1.14.0-0ubuntu1.2bb1) bionic; urgency=medium
+
+  * Balabit patched version
+
+ -- Balabit Platform Team <devnull@dev.null>  Sat, 10 Nov 2018 04:23:14 +0100
+
 nginx (1.14.0-0ubuntu1.2) bionic-security; urgency=medium
 
   * SECURITY UPDATE: excessive memory consumption in HTTP/2 implementation
