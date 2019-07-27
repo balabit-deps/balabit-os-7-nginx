@@ -1,3 +1,9 @@
+nginx (1.14.0-0ubuntu1.3bb1) bionic; urgency=medium
+
+  * Balabit patched version
+
+ -- Balabit Platform Team <devnull@dev.null>  Sat, 27 Jul 2019 04:31:54 +0200
+
 nginx (1.14.0-0ubuntu1.3) bionic; urgency=medium
 
   * No changes rebuild (to build against OpenSSL 1.1.1 in Bionic)
