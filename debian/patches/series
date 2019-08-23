@@ -4,3 +4,6 @@ ubuntu-branding.patch
 CVE-2018-16843.patch
 CVE-2018-16844.patch
 CVE-2018-16845.patch
+CVE-2019-9511.patch
+CVE-2019-9513.patch
+CVE-2019-9516.patch
