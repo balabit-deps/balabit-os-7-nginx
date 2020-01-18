@@ -1,3 +1,9 @@
+nginx (1.14.0-0ubuntu1.7bb1) bionic; urgency=medium
+
+  * Balabit patched version
+
+ -- Balabit Platform Team <devnull@dev.null>  Sat, 18 Jan 2020 04:23:53 +0100
+
 nginx (1.14.0-0ubuntu1.7) bionic-security; urgency=medium
 
   * SECURITY UPDATE: request smuggling via error_page
