@@ -1,3 +1,13 @@
+nginx (1.14.0-0ubuntu1.7) bionic-security; urgency=medium
+
+  * SECURITY UPDATE: request smuggling via error_page
+    - debian/patches/CVE-2019-20372.patch: discard request body when
+      redirecting to a URL via error_page in
+      src/http/ngx_http_special_response.c.
+    - CVE-2019-20372
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Fri, 10 Jan 2020 14:18:38 -0500
+
 nginx (1.14.0-0ubuntu1.6bb1) bionic; urgency=medium
 
   * Balabit patched version
